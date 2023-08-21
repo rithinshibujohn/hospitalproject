@@ -1,0 +1,32 @@
+<html>
+    <head>
+    </head>
+    <style>
+        body {
+            background-image: url("https://static-cse.canva.com/blob/572626/1.magebyRodionKutsaevviaUnsplash.jpg");
+            
+          }
+          .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+    
+          
+    </style>
+    <body >
+        <form method="POST" enctype="multipart/form-data">
+            {%csrf_token%}
+            {{form.as_p}}
+        
+            <button type="submit" class="button">SUBMIT</button>
+            
+    </body>
+</html>

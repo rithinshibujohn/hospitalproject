@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>doctor registrationform</title>
+        <style>
+            body {
+                background-image: url("https://static-cse.canva.com/blob/572626/1.magebyRodionKutsaevviaUnsplash.jpg");
+                
+              }
+        
+              
+        </style>
+    </head>
+    <body>
+        <center>
+    <h1 style="color:red">DOCTOR REGISTRATION FORM</h1>
+    <form method="POST">
+        {%csrf_token%}
+        <p>
+            <label>Name :&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp  </label>
+            <input type="text" name="name"/ >
+        </p>
+        <p>
+            <label >Age&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp </label>
+            <input type="text" name="age" />
+        <p>
+            <label>Depatment&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp&nbsp    </label>
+            <input type="text" name="department" />
+        </p>
+        <p>
+            <label>Email&nbsp</label>
+            <input type="text" name="email" />
+        <p>
+            <label>Username&nbsp</label>
+            <input type="text" name="username" />
+        </p>
+        <p>
+            <label>Password&nbsp</label>
+            <input type="password" name="password" />
+        </p>
+ 
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+ 
+    </form>
+</center>
+    </body>
+    </html>

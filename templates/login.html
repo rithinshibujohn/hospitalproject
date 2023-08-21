@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>registrationform</title>
+        <style>
+            body {
+                background-image: url("https://static-cse.canva.com/blob/572626/1.magebyRodionKutsaevviaUnsplash.jpg");
+                
+              }
+        
+              
+        </style>
+    </head>
+    <body>
+        <center>
+    <h1 style="color:red">DOCTOR LOGIN</h1>
+    <form method="POST" action="/loginuser/">
+        {%csrf_token%}
+        <p>
+            <label>Username&nbsp</label>
+            <input type="text" name="username" />
+     
+        </p>
+        <p>
+            <label>Password&nbsp</label>
+            <input type="password" name="password" />
+     
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+ 
+    </form>
+</center>
+    </body>
+    </html>
